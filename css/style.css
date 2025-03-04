@@ -1,0 +1,80 @@
+/* עיצוב בסיסי לכל הדפים */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* כותרת עליונה */
+header {
+    background: linear-gradient(90deg, #ffcc00, #ff6600);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* תפריט ניווט */
+nav {
+    background: #1a1a1a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* אזור התוכן המרכזי */
+main {
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    font-size: 20px;
+}
+
+/* כותרת ראשית */
+h1 {
+    font-size: 3em;
+    color: #ffcc00;
+}
+
+/* פסקאות */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* כפתורים */
+button {
+    background: #ffcc00;
+    color: black;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #ff9900;
+}
+
+/* תחתית הדף */
+footer {
+    background: #1a1a1a;
+    color: #ffcc00;
+    padding: 20px;
+    font-size: 14px;
+}
