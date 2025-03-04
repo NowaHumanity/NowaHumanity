@@ -83,42 +83,14 @@ footer {
     margin: 20px 0;
 }
 
-.social-btn {
-    display: inline-block;
-    font-size: 40px;
+.social-links img {
+    width: 50px; /* התאמת גודל האייקונים */
+    height: 50px;
     margin: 10px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* צבעים ייחודיים לכל פלטפורמה */
-.telegram {
-    background-color: #0088cc;
+.social-links img:hover {
+    transform: scale(1.1); /* אפקט התקרבות קל בעת מעבר עכבר */
 }
 
-.discord {
-    background-color: #5865F2;
-}
-
-.reddit {
-    background-color: #FF4500;
-}
-
-.twitter {
-    background-color: #1DA1F2;
-}
-
-.medium {
-    background-color: #12100E;
-}
-
-/* אפקט hover */
-.social-btn:hover {
-    opacity: 0.8;
-}
