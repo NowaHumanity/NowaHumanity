@@ -78,3 +78,47 @@ footer {
     padding: 20px;
     font-size: 14px;
 }
+/* סגנון לאייקוני קהילה */
+.social-links {
+    margin: 20px 0;
+}
+
+.social-btn {
+    display: inline-block;
+    font-size: 40px;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* צבעים ייחודיים לכל פלטפורמה */
+.telegram {
+    background-color: #0088cc;
+}
+
+.discord {
+    background-color: #5865F2;
+}
+
+.reddit {
+    background-color: #FF4500;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.medium {
+    background-color: #12100E;
+}
+
+/* אפקט hover */
+.social-btn:hover {
+    opacity: 0.8;
+}
