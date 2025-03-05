@@ -1,11 +1,12 @@
 /* עיצוב בסיסי לכל הדפים */
 body {
-    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    background: radial-gradient(circle, #2C2531 20%, #0a0a0a 80%);
     color: #ffffff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
 
 
 /* כותרת עליונה */
@@ -111,6 +112,7 @@ button:hover, .button:hover {
 }
 
 
+
 /* תחתית הדף */
 footer {
     background: #1a1a1a;
@@ -151,7 +153,9 @@ footer {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: -1; 
 }
+
 
 /* כל קטע של מפת הדרכים */
 .roadmap-section {
