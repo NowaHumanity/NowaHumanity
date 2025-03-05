@@ -60,6 +60,14 @@ p {
     line-height: 1.6;
 }
 
+/* הסרת העיגולים מרשימות */
+ul {
+    list-style-type: none; /* מסיר את העיגולים */
+    padding: 0;
+    margin: 0;
+}
+
+
 /* כפתורים כלליים */
 button, .button {
     display: inline-block;
