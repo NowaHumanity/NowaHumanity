@@ -1,13 +1,11 @@
 /* עיצוב בסיסי לכל הדפים */
 body {
-    background: radial-gradient(circle, #2C2531 20%, #0a0a0a 80%);
+    background: linear-gradient(135deg, #2C2531, #1a1a1a);
     color: #ffffff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-
-
 
 /* כותרת עליונה */
 header {
@@ -31,7 +29,6 @@ nav {
     transition: background 0.3s ease-in-out;
 }
 
-
 nav a {
     color: #ffcc00;
     text-decoration: none;
@@ -46,17 +43,16 @@ nav a:hover {
 /* אזור התוכן המרכזי */
 main {
     padding: 50px;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     font-size: 20px;
 }
 
-/* כותרת ראשית */
+/* כותרות */
 h1, h2, h3 {
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
 }
-
 
 /* פסקאות */
 p {
@@ -136,6 +132,7 @@ footer {
     transform: scale(1.1); /* אפקט התקרבות קל בעת מעבר עכבר */
 }
 
+/* מפת הדרכים */
 .roadmap {
     display: flex;
     flex-direction: column;
@@ -153,11 +150,8 @@ footer {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1; 
 }
 
-
-/* כל קטע של מפת הדרכים */
 .roadmap-section {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -166,9 +160,9 @@ footer {
     max-width: 600px;
     margin: 40px 0;
     position: relative;
+    text-align: left;
 }
 
-/* נקודות עצירה */
 .roadmap-section::before {
     content: '🚀';
     position: absolute;
@@ -176,18 +170,18 @@ footer {
     transform: translateX(-50%);
     background: #ffcc00;
     color: black;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
     font-weight: bold;
-    top: -10px;
+    top: -20px;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
 }
 
-/* סידור מתחלף של הבלוקים */
 .roadmap-section:nth-child(even) {
     align-self: flex-start;
     margin-left: 10%;
@@ -198,7 +192,6 @@ footer {
     margin-right: 10%;
 }
 
-/* כותרות לכל שלב */
 .roadmap-section h2 {
     color: #ffcc00;
     text-align: center;
