@@ -183,72 +183,42 @@ footer {
     content: ''; 
 }
 
-/* התאמת האתר למסכים קטנים יותר (מובייל וטאבלטים) */
 @media (max-width: 768px) {
-    
-    /* שינוי מבנה התפריט */
+    /* תיקון התצוגה של קופסאות ה-ROADMAP */
+    .roadmap-section {
+        width: 90%;  /* מגדיל את המסגרת כך שהתוכן יישאר בפנים */
+        font-size: 16px; /* מקטין מעט את הפונט לנראות טובה יותר */
+        padding: 15px; /* נותן ריווח נוח בתוך המלבן */
+        word-wrap: break-word; /* שובר שורות אוטומטית */
+    }
+
+    /* כותרות */
+    .roadmap-section h2 {
+        font-size: 1.5em;
+    }
+
+    /* תיקון ריווח התפריט */
     nav {
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
+        flex-direction: column; /* מסדר את התפריט לעמודה */
     }
 
     nav a {
         display: block;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    /* התאמת האזור הראשי */
-    main {
-        padding: 20px;
-        font-size: 18px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    /* התאמת ה-ROADMAP */
-    .roadmap-section {
-        width: 90%; /* שימלא את רוב הרוחב במסכים קטנים */
-        margin: 20px auto;
-    }
-
-    /* התאמת גודל החצים */
-    .roadmap-section::after {
-        font-size: 2.5em;
-    }
-
-    /* התאמת כפתורים */
-    button, .button {
-        padding: 12px 20px;
+        padding: 8px;
         font-size: 16px;
     }
 }
 
-/* התאמה למסכים קטנים במיוחד (טלפונים קטנים) */
+/* התאמה לטלפונים קטנים מאוד (עד 480px) */
 @media (max-width: 480px) {
-    
-    h1 {
-        font-size: 1.8em;
-    }
-
-    main {
-        font-size: 16px;
-    }
-
     .roadmap-section {
-        width: 95%; /* יותר צר במסכים קטנים */
-    }
-
-    .roadmap-section::after {
-        font-size: 3em; /* החצים יותר גדולים במסכים קטנים */
-    }
-
-    button, .button {
-        padding: 10px 15px;
+        width: 95%;
         font-size: 14px;
+        padding: 12px;
+    }
+
+    .roadmap-section h2 {
+        font-size: 1.3em;
     }
 }
 
