@@ -139,6 +139,7 @@ footer {
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding: 50px 0;
 }
 
 .roadmap::before {
@@ -152,26 +153,51 @@ footer {
     transform: translateX(-50%);
 }
 
+/* כל קטע של מפת הדרכים */
 .roadmap-section {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
+    width: 50%;
     max-width: 600px;
-    margin: 20px 0;
+    margin: 40px 0;
     position: relative;
 }
 
-.roadmap-section h2 {
-    color: #ffcc00;
+/* נקודות עצירה */
+.roadmap-section::before {
+    content: '🚀';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffcc00;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    top: -10px;
 }
 
+/* סידור מתחלף של הבלוקים */
 .roadmap-section:nth-child(even) {
     align-self: flex-start;
+    margin-left: 10%;
 }
 
 .roadmap-section:nth-child(odd) {
     align-self: flex-end;
+    margin-right: 10%;
+}
+
+/* כותרות לכל שלב */
+.roadmap-section h2 {
+    color: #ffcc00;
+    text-align: center;
 }
 
 
