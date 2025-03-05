@@ -119,6 +119,7 @@ footer {
     transform: scale(1.1); /* אפקט התקרבות קל בעת מעבר עכבר */
 }
 
+/* אפקט fade-in לכל האלמנטים שנטען אותם בהדרגה */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -129,6 +130,7 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 .roadmap {
     display: flex;
