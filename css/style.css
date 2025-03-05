@@ -62,13 +62,12 @@ p {
 
 /* הסרת העיגולים מרשימות */
 ul {
-    list-style-type: none; /* מסיר את העיגולים */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-
-/* כפתורים כלליים */
+/* כפתורים */
 button, .button {
     display: inline-block;
     background: linear-gradient(90deg, #ffcc00, #ff9900);
@@ -86,36 +85,10 @@ button, .button {
     overflow: hidden;
 }
 
-/* אפקט הילה לכפתור */
-button::before, .button::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 204, 0, 0.3) 10%, rgba(255, 204, 0, 0) 80%);
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
-}
-
-button:hover::before, .button:hover::before {
-    opacity: 1;
-}
-
-/* אפקט לחיצה */
-button:active, .button:active {
-    transform: scale(0.95);
-    box-shadow: 0px 2px 5px rgba(255, 204, 0, 0.7);
-}
-
-/* מעבר צבע חלק בלחיצה */
 button:hover, .button:hover {
     background: linear-gradient(90deg, #ff9900, #ff6600);
     box-shadow: 0px 4px 20px rgba(255, 153, 0, 0.7);
 }
-
-
 
 /* תחתית הדף */
 footer {
@@ -124,20 +97,21 @@ footer {
     padding: 20px;
     font-size: 14px;
 }
+
 /* סגנון לאייקוני קהילה */
 .social-links {
     margin: 20px 0;
 }
 
 .social-links img {
-    width: 50px; /* התאמת גודל האייקונים */
+    width: 50px;
     height: 50px;
     margin: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
 .social-links img:hover {
-    transform: scale(1.1); /* אפקט התקרבות קל בעת מעבר עכבר */
+    transform: scale(1.1);
 }
 
 /* עיצוב ROADMAP */
@@ -153,9 +127,9 @@ footer {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    width: 50%;
+    width: 80%;
     max-width: 600px;
-    margin: 40px 0;
+    margin: 40px auto;
     position: relative;
     text-align: center;
     font-size: 1.2em;
@@ -169,11 +143,11 @@ footer {
 
 /* חצים שמחברים בין השלבים */
 .roadmap-section::after {
-    content: '⬇️'; /* חץ כלפי מטה */
+    content: '⬇️';
     font-size: 2em;
     color: #ffcc00;
     position: absolute;
-    bottom: -35px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -183,36 +157,58 @@ footer {
     content: ''; 
 }
 
+/* 🔹 התאמה מלאה למובייל 🔹 */
 @media (max-width: 768px) {
-    /* תיקון התצוגה של קופסאות ה-ROADMAP */
-    .roadmap-section {
-        width: 90%;  /* מגדיל את המסגרת כך שהתוכן יישאר בפנים */
-        font-size: 16px; /* מקטין מעט את הפונט לנראות טובה יותר */
-        padding: 15px; /* נותן ריווח נוח בתוך המלבן */
-        word-wrap: break-word; /* שובר שורות אוטומטית */
+    body {
+        font-size: 16px;
     }
 
-    /* כותרות */
-    .roadmap-section h2 {
-        font-size: 1.5em;
+    main {
+        max-width: 95%;
+        padding: 20px;
     }
 
-    /* תיקון ריווח התפריט */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    p, li {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
     nav {
-        flex-direction: column; /* מסדר את התפריט לעמודה */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     nav a {
         display: block;
-        padding: 8px;
+        padding: 10px;
         font-size: 16px;
+    }
+
+    .roadmap-section {
+        width: 95%;
+        font-size: 1em;
+        padding: 15px;
+        word-wrap: break-word;
     }
 }
 
 /* התאמה לטלפונים קטנים מאוד (עד 480px) */
 @media (max-width: 480px) {
     .roadmap-section {
-        width: 95%;
+        width: 98%;
         font-size: 14px;
         padding: 12px;
     }
@@ -221,9 +217,3 @@ footer {
         font-size: 1.3em;
     }
 }
-
-
-
-
-
-
